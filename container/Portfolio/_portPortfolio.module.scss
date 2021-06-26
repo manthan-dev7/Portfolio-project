@@ -1,0 +1,46 @@
+.center {
+  @apply flex justify-center pt-24 pb-16;
+}
+
+.portfolio {
+  @apply max-w-screen-lg px-2;
+}
+.row {
+  @apply flex flex-col;
+}
+.headText {
+  @apply mb-12 text-center;
+}
+
+.pFilter {
+  @apply mb-10 text-center font-Raleway;
+}
+.pFilter ul {
+  @apply m-0 p-0;
+}
+.selItem {
+  @apply font-semibold;
+}
+.pFilter ul li {
+  @apply inline-block text-sm mr-5 relative cursor-pointer uppercase;
+}
+.pFilter ul li::before {
+  content: '/';
+  @apply absolute -right-4 font-normal;
+}
+.pFilter ul li:last-child::before {
+  @apply hidden;
+}
+
+.item {
+  @apply flex flex-wrap;
+}
+.hoverContext {
+  @apply flex flex-col items-center pt-16;
+}
+.itemContent {
+  @apply h-[90%] w-[90%] flex justify-center absolute items-center top-[0.7rem] left-[0.9rem] lg:top-3 lg:left-4 md:top-[0.9rem] md:left-[1.1rem];
+}
+.relativeP {
+  @apply relative;
+}

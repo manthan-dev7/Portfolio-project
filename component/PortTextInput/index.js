@@ -15,7 +15,7 @@ const PortTextInput = ({ variant, className, component, ...rest }) => {
 };
 
 PortTextInput.propTypes = {
-  variant: PropTypes.oneOf(['contactInput', 'contactTextArea']),
+  variant: PropTypes.oneOf(['contactInput']),
   component: PropTypes.string,
 };
 

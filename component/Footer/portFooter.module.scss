@@ -1,0 +1,19 @@
+.main {
+  @apply bg-[#222222] md:gap-6 sm:gap-5 py-6 h-full lg:px-44 md:px-36;
+}
+.footerMain {
+  @apply lg:grid-cols-4 md:grid-cols-2 grid;
+}
+.footerText {
+  @apply text-center;
+}
+.footerLine {
+  @apply h-[1px] col-span-4 my-12 bg-gray-500;
+}
+.footText {
+  @apply sm:col-span-4  sm:justify-self-center justify-self-center text-center text-gray-700;
+}
+
+.text {
+  @apply text-[#aaaaaa];
+}

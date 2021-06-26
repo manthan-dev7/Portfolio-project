@@ -1,7 +1,7 @@
 .portHomeButton {
   @apply bg-backgroundColor-skin-button-accent text-[13px] text-textColor-skin-inverted px-[20px] py-[10px]
   uppercase font-semibold border-2 border-backgroundColor-skin-button-accent border-solid
-  hover:bg-transparent hover:text-backgroundColor-skin-button-accent items-center cursor-pointer;
+  hover:bg-transparent hover:text-backgroundColor-skin-button-accent items-center;
 }
 
 .portSocialButton {
@@ -11,10 +11,6 @@
   hover:bg-transparent hover:text-backgroundColor-skin-button-accent;
 }
 
-.portResume {
-  @apply text-white bg-transparent p-2 border-[#222] hover:bg-[#222];
-}
-
 .portServiceButton {
   @apply bg-transparent 
   flex 
@@ -22,10 +18,7 @@
   items-center justify-center
   h-[80px] w-[80px]
   hover:shadow-2xl
-  hover:transform hover:duration-700;
-}
-.portNavButton {
-  @apply border-none absolute md:hidden p-3 top-0 fixed z-30 right-0 bg-transparent text-white;
+  hover:transform hover:duration-500;
 }
 
 .disable {

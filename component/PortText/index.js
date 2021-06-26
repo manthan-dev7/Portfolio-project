@@ -46,13 +46,8 @@ PortText.propTypes = {
     'portFlexText',
     'portHeaderTextPCard',
     'portHoverCardText',
-    'portSingleBlog',
-    'portSingleBlogText',
-    'portCommentText',
-    'portCommentdetailText',
   ]),
   component: PropTypes.string,
-  className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 

@@ -1,0 +1,37 @@
+.testimonial {
+  background-image: url(/image/testimonial/testimonials-bg.jpg);
+  @apply bg-fixed bg-cover relative py-24;
+}
+.testimonial::after {
+  content: '.';
+  @apply absolute top-0 left-0 right-0 bottom-0 bg-black opacity-60;
+}
+
+.container {
+  @apply relative z-10 w-full px-4 flex flex-col items-center justify-center;
+  & > .slider {
+    @apply relative;
+    & > .slide {
+        @apply absolute inset-0 w-screen h-screen flex flex-col items-center justify-center transition-all ease-in-out duration-1000 transform translate-x-0;
+    }
+    & > .slide1 {
+        @apply absolute inset-0 w-screen h-screen flex flex-col items-center justify-center transition-all ease-in-out duration-1000 transform translate-x-full;
+    }
+    
+  }
+}
+.description{
+    @apply line-clamp-5
+}
+.authorImg {
+  @apply flex justify-center;
+}
+.authorImg img {
+  @apply w-28 h-28 rounded-[50%] mb-4;
+}
+.dot {
+  @apply mt-2;
+}
+.dot .individualDot {
+  @apply inline-block cursor-pointer h-3 w-5 mx-2 my-1 border-red-800 bg-gray-300 rounded-[30px];
+}

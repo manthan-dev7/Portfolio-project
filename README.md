@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-harsh Desai first commit
+harsh patel first commit
 
 ```bash
 npm run dev

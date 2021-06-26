@@ -3,22 +3,22 @@
 }
 
 .portLogoText {
-  font-family: 'Montserrat', sans-serif;
-  @apply font-extrabold text-[28px] m-0 text-textColor-skin-inverted uppercase z-50 absolute; 
+  font-family: 'Montserrat';
+  @apply font-extrabold absolute top-[3%] left-[5%] text-[28px] m-0 text-textColor-skin-inverted uppercase z-10;
 }
 
 .portNavText {
-  @apply text-[13px] font-normal font-Raleway uppercase;
+  @apply text-[13px] font-normal font-Raleway  uppercase;
 }
 
 .portHeaderText {
   @apply text-textColor-skin-base text-[88px] font-black font-Raleway;
 }
 .portHeaderHomeText {
-  @apply text-textColor-skin-inverted font-black font-Raleway;
+  @apply text-textColor-skin-inverted text-[88px] font-black font-Raleway;
 }
 .portHeaderCaption {
-  @apply text-textColor-skin-inverted-dull font-Raleway;
+  @apply text-[24px] text-textColor-skin-inverted-dull font-Raleway;
 }
 
 .portHeaderCaptionBold {
@@ -26,11 +26,11 @@
 }
 
 .portHeadingText {
-  @apply text-textColor-skin-base font-semibold lg:text-[32px] md:text-[31px] sm:text-[30px] xs:text-[24px] m-0 uppercase font-Raleway;
+  @apply text-textColor-skin-base font-semibold text-[32px] m-0 uppercase font-Raleway;
 }
 
 .portHeadingCaption {
-  @apply uppercase text-[16px] m-0 text-textColor-skin-base  font-medium font-Raleway;
+  @apply uppercase text-[16px] text-textColor-skin-base  font-medium font-Raleway;
 }
 
 .portParaText {
@@ -62,7 +62,7 @@
 }
 
 .portCardHeaderText {
-  @apply text-textColor-skin-base text-[16px] font-semibold font-Raleway;
+  @apply text-textColor-skin-base text-[16px] font-semibold font-Raleway text-center;
 }
 
 .portCardReadText {
@@ -80,15 +80,9 @@
 .portTestimonialText {
   @apply text-textColor-skin-inverted text-[24px] font-Raleway font-semibold m-0;
 }
-.portCommentText {
-  @apply text-textColor-skin-base text-[24px] font-Raleway font-semibold m-0;
-}
 
 .portTestimonialPText {
-  @apply text-[16px] font-sans text-textColor-skin-inverted;
-}
-.portEduLeftText {
-  @apply font-sans text-textColor-skin-base;
+  @apply text-[16px] font-sans;
 }
 
 .portTestimonialRoleText {
@@ -102,9 +96,6 @@
 .portContactDetailText {
   @apply font-opensans  text-[14px] text-textColor-skin-inverted;
 }
-.portCommentdetailText {
-  @apply font-opensans  text-[14px] text-textColor-skin-base;
-}
 .portFooterText {
   @apply font-opensans  text-[14px] text-textColor-skin-copyright;
 }
@@ -115,11 +106,4 @@
 
 .portHoverCardText {
   @apply text-textColor-skin-base text-[20px] font-semibold font-Raleway text-center;
-}
-.portSingleBlog {
-  @apply font-semibold md:text-[48px] sm:text-[40px] xs:text-[30px] m-0 uppercase font-Raleway;
-}
-
-.portSingleBlogText {
-  @apply text-textColor-skin-base font-semibold text-[28px] m-0 uppercase font-Raleway;
 }

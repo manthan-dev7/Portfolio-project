@@ -14,10 +14,10 @@ const validate = values => {
     errors.name = 'Must be 15 characters or less';
   }
 
-  if (!values.tel) {
-    errors.tel = 'Required';
-  } else if (!/^[+]?[0-9]{3}[0-9]{3}[0-9]{4,6}$/i.test(values.tel)) {
-    errors.tel = 'Invalid phone number';
+  if (!values.email) {
+    errors.email = 'Required';
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address';
   }
 
   return errors;
@@ -30,7 +30,7 @@ const SignupForm = () => {
   const formik = useFormik({
     initialValues: {
       name: '',
-      tel: '',
+      email: '',
     },
     validate,
     onSubmit: values => {
@@ -38,7 +38,7 @@ const SignupForm = () => {
     },
   });
   return (
-    <form id="Contact" onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit}>
       <div>
         <div className="contactContainer">
           <div>
@@ -64,15 +64,15 @@ const SignupForm = () => {
               </div>
               <div>
                 <PortTextInput
-                  id="tel"
-                  name="tel"
-                  type="tel"
+                  id="email"
+                  name="email"
+                  type="email"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.tel}
+                  value={formik.values.email}
                   variant="contactInput"
-                  placeholder="Phone Number"
-                  className={formik.errors.tel ? 'borderBottom' : null}
+                  placeholder="Email"
+                  className={formik.errors.email ? 'borderBottom' : null}
                 />
               </div>
             </div>
@@ -82,9 +82,7 @@ const SignupForm = () => {
               placeholder="How can we help you?"
             />
           </div>
-          <Button type="submit" className="buttonMargin">
-            SEND MESSAGE
-          </Button>
+          <Button className="buttonMargin">SEND MESSAGE</Button>
         </div>
       </div>
     </form>

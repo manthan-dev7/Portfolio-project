@@ -22,13 +22,7 @@ const Button = ({ variant, className, isDisabled, children, isLoading, onClick, 
 );
 
 Button.propTypes = {
-  variant: PropTypes.oneOf([
-    'portHomeButton',
-    'portResume',
-    'portSocialButton',
-    'disable',
-    'portNavButton',
-  ]),
+  variant: PropTypes.oneOf(['portHomeButton', 'portSocialButton', 'disable']),
 };
 
 Button.defaultProps = {

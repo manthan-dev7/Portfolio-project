@@ -6,39 +6,105 @@ import Laptop from '../../public/svg/laptop-outline.svg';
 import Phone from '../../public/svg/phone-portrait-outline.svg';
 import Rocket from '../../public/svg/rocket-outline.svg';
 import Help from '../../public/svg/help-buoy.svg';
-import useMarkdown from '../../hooks/useMarkdown';
 
-const Services = ({ data }) => (
-  // const { HTML } = useMarkdown(data.header);
-  <section id="Services" className="Service">
+const Services = () => (
+  <div className="Service">
     <div>
-      {/* <div dangerouslySetInnerHTML={{ __html: HTML }} /> */}
       <PortText variant="portHeadingCaption" component="h4">
-        {data.header.title}
+        SERVICES
       </PortText>
       <PortText variant="portHeadingText" component="h1">
-        {data.header.caption}
+        WHAT I CAN DO
       </PortText>
     </div>
     {/* 6 service cards */}
 
+    {/* r1 c1 */}
     <div className="mainbox">
-      {/* r1 c1 */}
-      {data.services.map(x => (
-        <div key={x.id} className="box">
-          <Button variant="portServiceButton">
-            <Laptop height={35} width={35} />
-          </Button>
-          <PortText variant="portServiceSubHeadingText">
-            <b>{x.title}</b>
-          </PortText>
-          <PortText variant="portParaText" component="p">
-            {x.description}
-          </PortText>
-        </div>
-      ))}
+      <div className="box">
+        <Button variant="portServiceButton">
+          <Laptop height={35} width={35} />
+        </Button>
+        <PortText variant="portServiceSubHeadingText">
+          <b> WEB DESIGN</b>
+        </PortText>
+        <PortText variant="portParaText" component="p">
+          Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text
+          ever.
+        </PortText>
+      </div>
+
+      {/* r1 c2 */}
+      <div className="box">
+        <Button variant="portServiceButton">
+          <Code height={35} width={35} />
+        </Button>
+        <PortText variant="portServiceSubHeadingText">
+          <b> WEB DEVELOPMENT</b>
+        </PortText>
+        <PortText variant="portParaText" component="p">
+          Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text
+          ever.
+        </PortText>
+      </div>
+
+      {/* r1 c3 */}
+      <div className="box">
+        <Button variant="portServiceButton">
+          <Phone height={35} width={35} />
+        </Button>
+        <PortText variant="portServiceSubHeadingText">
+          <b>RESPONSIVE DESIGN</b>
+        </PortText>
+        <PortText variant="portParaText" component="p">
+          Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text
+          ever.
+        </PortText>
+      </div>
+
+      {/* r2 c1 */}
+      <div className="box">
+        <Button variant="portServiceButton">
+          <Rocket height={35} width={35} />
+        </Button>
+        <PortText variant="portServiceSubHeadingText">
+          <b> BRANDING IDENTITY</b>
+        </PortText>
+        <PortText variant="portParaText" component="p">
+          Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text
+          ever.
+        </PortText>
+      </div>
+
+      {/* r2 c2 */}
+      <div className="box">
+        <Button variant="portServiceButton">
+          <Create height={35} width={35} />
+        </Button>
+        <PortText variant="portServiceSubHeadingText">
+          <b> CREATIVE DESIGN </b>
+        </PortText>
+        <PortText variant="portParaText" component="p">
+          Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text
+          ever.
+        </PortText>
+      </div>
+
+      {/* r2 c3 */}
+      <div className="box">
+        <Button variant="portServiceButton">
+          <Help height={35} width={35} />
+        </Button>
+        <PortText variant="portServiceSubHeadingText">
+          <b> SUPPORT </b>
+        </PortText>
+        <PortText variant="portParaText" component="p">
+          Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text
+          ever.
+        </PortText>
+      </div>
     </div>
-  </section>
+  </div>
 );
 
 export default Services;

@@ -1,41 +1,21 @@
-// import Slider from 'react-slick';
+import classNames from 'classnames';
 import PortText from '../../component/PortText';
+import styles from './_portTestimonial.module.scss';
 
-// const settings = {
-//   dots: true,
-//   speed: 2000,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   pauseOnHover: true,
-//   autoplay: true,
-//   arrows: false,
-//   appendDots: dots => <ul> {dots} </ul>,
-//   customPaging: i => <div className="slickDotsUp" />,
-// };
-
-const Testimonial = ({ data }) => (
-  <section className="testimonial">
-    <div className="testimonialContainer">
-      <figure className="slider">
-        {data.map(x => (
-          <div key={x.id} className="containerTest">
-            <div className="authorImg">
-              <img src="/image/testimonial/img-1.jpg" alt="" />
-            </div>
-            <PortText variant="portTestimonialText">{x.personName}</PortText>
-            <PortText variant="portTestimonialRoleText">{x.jobTitle}</PortText>
-            <PortText variant="portTestimonialPText" className="description">
-              {x.description}
-            </PortText>
-          </div>
-        ))}
-        {/* <div className="containerTest">
-          <div className="authorImg">
+const Testimonial = () => (
+  <section className={styles.testimonial}>
+    <div className={styles.container}>
+      <div className={styles.slider}>
+        <div className={styles.slide}>
+          <div
+            className={classNames(styles.authorImg, {
+              active: true,
+            })}>
             <img src="/image/testimonial/img-1.jpg" alt="" />
           </div>
-          <PortText variant="portTestimonialText">Mr Raj Desai</PortText>
-          <PortText variant="portTestimonialRoleText">Manager</PortText>
-          <PortText variant="portTestimonialPText" className="description">
+          <PortText variant="portTestimonialText">Mr John Doe</PortText>
+          <PortText variant="portTestimonialRoleText">Creative Director</PortText>
+          <PortText variant="portTestimonialPText" className={styles.description}>
             Dolor facilis veritatis doloremque dicta eos Voluptate earum nulla ad et esse Saepe
             asperiores nisi facere ipsam corporis. Dolorem praesentium tenetur tempore dolorem illum
             autem? Veritatis fuga quasi sunt tenetur. Expedita id eaque incidunt beatae nesciunt! In
@@ -43,21 +23,33 @@ const Testimonial = ({ data }) => (
             quas!
           </PortText>
         </div>
-        <div className="containerTest">
-          <div className="authorImg">
+        <div className={styles.slide1}>
+          <div className={styles.authorImg}>
             <img src="/image/testimonial/img-1.jpg" alt="" />
           </div>
-          <PortText variant="portTestimonialText">Mr Devanshi Desai</PortText>
-          <PortText variant="portTestimonialRoleText">Manager</PortText>
-          <PortText variant="portTestimonialPText" className="description">
+          <PortText variant="portTestimonialText">Mr John Doe adfadf</PortText>
+          <PortText variant="portTestimonialRoleText">Creative Director</PortText>
+          <PortText variant="portTestimonialPText" className={styles.description}>
             Dolor facilis veritatis doloremque dicta eos Voluptate earum nulla ad et esse Saepe
             asperiores nisi facere ipsam corporis. Dolorem praesentium tenetur tempore dolorem illum
             autem? Veritatis fuga quasi sunt tenetur. Expedita id eaque incidunt beatae nesciunt! In
             similique exercitationem tempore excepturi placeat Nostrum ducimus dicta temporibus
             quas!
           </PortText>
-        </div> */}
-      </figure>
+        </div>
+      </div>
+
+      <div className={styles.dot}>
+        <div className={styles.individualDot}>
+          <span></span>
+        </div>
+        <div className={styles.individualDot}>
+          <span></span>
+        </div>
+        <div className={styles.individualDot}>
+          <span></span>
+        </div>
+      </div>
     </div>
   </section>
 );

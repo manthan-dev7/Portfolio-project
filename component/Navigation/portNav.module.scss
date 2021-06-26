@@ -1,0 +1,7 @@
+.portNav {
+  @apply absolute top-[3%] right-[5%] z-10 xs:hidden md:flex  space-x-7 w-auto uppercase;
+}
+
+.portEle {
+  @apply  font-Raleway text-white border-black border-b font-light text-[13px] hover:text-gray-300;
+}
